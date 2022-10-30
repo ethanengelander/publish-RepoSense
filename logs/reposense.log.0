@@ -1,0 +1,11 @@
+Oct 30, 2022 8:29:12 AM reposense.parser.CsvParser validateHeader
+INFO: Parsed header of CSV file, repo-config.csv, and recognized columns: Ignore Standalone Config,  Repository's Location,  Branch,  File formats,  Ignore Glob List,  Ignore Authors List,  Ignore Commits List
+Oct 30, 2022 8:29:12 AM reposense.RepoSense main
+WARNING: Unknown column(s) found: Author's Email (./configs/author-config.csv)
+reposense.parser.InvalidHeaderException: Unknown column(s) found: Author's Email (./configs/author-config.csv)
+	at reposense.parser.CsvParser.validateHeader(CsvParser.java:257)
+	at reposense.parser.CsvParser.getHeader(CsvParser.java:139)
+	at reposense.parser.CsvParser.parse(CsvParser.java:85)
+	at reposense.RepoSense.getRepoConfigurations(RepoSense.java:133)
+	at reposense.RepoSense.main(RepoSense.java:66)
+
